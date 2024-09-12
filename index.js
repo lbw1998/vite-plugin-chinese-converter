@@ -1,7 +1,7 @@
-import { watch, readFile, writeFile } from 'fs';
-import chineseConv from 'chinese-conv';
+const { watch, readFile, writeFile } = require('fs')
+const chineseConv = require('chinese');
 
-export default function vitePluginZhConverter(options = {}) {
+module.exports =  function vitePluginZhConverter(options = {}) {
   const { inputPath = 'src/locales/zh-CN.ts', outputPath = 'src/locales/zh-TW.ts' } = options;
 
   return {
