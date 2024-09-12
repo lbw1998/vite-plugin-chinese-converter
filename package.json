@@ -1,0 +1,28 @@
+{
+  "name": "vite-plugin-zh-converter",
+  "version": "1.0.0",
+  "description": "Automatically generate Traditional Chinese files based on Simplified Chinese files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "vite",
+    "plugin",
+    "zh-CN",
+    "zh-TW",
+    "converter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lbw1998/vite-plugin-zh-converter.git"
+  },
+  "author": "Robert",
+  "license": "MIT",
+  "dependencies": {
+    "chinese-conv": "^2.1.1"
+  }
+}
