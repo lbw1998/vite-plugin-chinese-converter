@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-chinese-converter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Automatically generate Traditional Chinese files based on Simplified Chinese files.",
   "main": "index.js",
   "scripts": {
