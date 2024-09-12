@@ -5,7 +5,7 @@ export default function vitePluginZhConverter(options = {}) {
   const { inputPath = 'src/locales/zh-CN.ts', outputPath = 'src/locales/zh-TW.ts' } = options;
 
   return {
-    name: 'vite-plugin-zh-converter',
+    name: 'vite-plugin-chinese-converter',
     buildStart() {
       // 监听指定的输入文件
       watch(inputPath, (eventType) => {

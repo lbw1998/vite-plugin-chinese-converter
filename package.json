@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-zh-converter",
+  "name": "vite-plugin-chinese-converter",
   "version": "1.0.0",
   "description": "Automatically generate Traditional Chinese files based on Simplified Chinese files.",
   "main": "index.js",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lbw1998/vite-plugin-zh-converter.git"
+    "url": "https://github.com/lbw1998/vite-plugin-chinese-converter.git"
   },
   "author": "Robert",
   "license": "MIT",
