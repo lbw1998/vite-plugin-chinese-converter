@@ -1,7 +1,7 @@
 # vite-plugin-chinese-converter [![](https://badge.fury.io/js/vite-plugin-chinese-converter.svg)](https://www.npmjs.com/package/vite-plugin-chinese-converter)
 自动监听国际化项目中的中文文件并生成新的繁/简体文件。
 
-**Import vite-plugin-chinese-converter in Node.js script**
+### 安装 (yarn or npm)
 
 ```bash
 yarn add vite-plugin-chinese-converter -D
@@ -10,9 +10,9 @@ npm i vite-plugin-chinese-converter -D
 # or
 pnpm add vite-plugin-chinese-converter -D
 ```
-
+## 使用
+- vite.config.ts 配置
 ```javascript
-// vite.config.js
 import vitePluginChineseConverter from 'vite-plugin-chinese-converter';
 
 export default ():  => {
