@@ -1,8 +1,9 @@
 {
   "name": "vite-plugin-chinese-converter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Automatically generate Traditional Chinese files based on Simplified Chinese files.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,6 @@
   "author": "Robert",
   "license": "MIT",
   "dependencies": {
-    "chinese-conv": "^2.1.1"
+    "opencc-js": "^1.0.5"
   }
 }

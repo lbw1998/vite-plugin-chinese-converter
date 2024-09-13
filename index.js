@@ -1,8 +1,8 @@
-const { watch, readFile, writeFile } = require('fs')
-const chineseConv = require('chinese-conv');
+import { watch, readFile, writeFile } from 'fs';
+import * as OpenCC from 'opencc-js'
 
-module.exports =  function vitePluginZhConverter(options = {}) {
-  const { inputPath = 'src/locales/zh-CN.ts', outputPath = 'src/locales/zh-TW.ts' } = options;
+export default function vitePluginZhConverter(options = {}) {
+  const { inputPath = 'src/locales/zh-CN.ts', outputPath = 'src/locales/zh-TW.ts', from = 'cn', to ='tw' } = options;
 
   return {
     name: 'vite-plugin-chinese-converter',
@@ -17,7 +17,8 @@ module.exports =  function vitePluginZhConverter(options = {}) {
               return;
             }
             // 转换简体字为繁体字
-            const traditionalText = chineseConv.toTraditional(data);
+            const converter = OpenCC.Converter({ from, to })
+            const traditionalText = converter(data);
             // 生成指定的输出文件
             writeFile(outputPath, traditionalText, (err) => {
               if (err) {
