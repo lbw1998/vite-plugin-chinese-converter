@@ -19,7 +19,10 @@ export default ():  => {
   return {
     plugins: [
       vue(),
-      vitePluginChineseConverter(),
+      vitePluginChineseConverter({
+        inputPath: 'src/locales/zh-CN.ts',
+        outputPath: 'src/locales/zh-TW.ts'
+      }),
     ],
   }
 }
