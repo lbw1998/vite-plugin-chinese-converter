@@ -2,7 +2,7 @@ import { watch, readFile, writeFile } from 'fs';
 import * as OpenCC from 'opencc-js'
 
 export default function vitePluginZhConverter(options = {}) {
-  const { inputPath = 'src/locales/zh-CN.ts', outputPath = 'src/locales/zh-TW.ts', from = 'cn', to ='tw' } = options;
+  const { inputPath = 'src/locales/zh-CN.ts', outputPath = 'src/locales/zh-TW.ts', from = 'cn', to ='hk' } = options;
 
   return {
     name: 'vite-plugin-chinese-converter',
