@@ -1,10 +1,16 @@
 {
   "name": "vite-plugin-chinese-converter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Automatically generate Traditional Chinese files based on Simplified Chinese files.",
-  "main": "index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "type": "module",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -25,5 +31,13 @@
   "license": "MIT",
   "dependencies": {
     "opencc-js": "^1.0.5"
+  },
+  "devDependencies": {
+    "rollup": "^2.0.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "rollup-plugin-babel": "^4.0.0",
+    "@babel/preset-env": "^7.0.0"
   }
 }
